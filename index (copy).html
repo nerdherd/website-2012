@@ -1,0 +1,113 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+	var lspeed = 10000*.8;
+	var rspeed = 5000*.8;
+	$('.l_tile').animate({backgroundPosition: 100+'%'},lspeed,'linear');
+	$('.l_tile').animate({backgroundPosition: 50+'%'},rspeed,'linear');
+	$('.p_footer').animate({width:100+'%'},1000,'linear');
+	
+	$('#sidebar').mouseover(function(){
+		$('#sidebar li:hover ul.sub').animate({display:block},1000);
+	});
+
+	$("#legal").mouseover(function(){
+		var hover = "";
+		$(".p_footer").animate({height:250},250,function(){$("#legal").mouseout(function(){
+																				$(".p_footer").animate({bottom:0, height:20},250,function(){$(".p_footer").stop(true);});		
+																			});
+		});
+	});
+	
+	
+
+	
+});
+
+
+</script> 
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="icon" type="image/png" href="http://technoturtle.comze.com/favicon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Be a Nerd! Join the Herd!</title>
+</head>
+
+<body class="home">
+<div class="main_cont">
+<div id="pre_title">CAMS Robotics Team 687</div>
+<div id="logo_row"><a href="index.html"></a></div>
+<div id="title">The Nerd Herd</div>
+	<!-- if nav messes up, i used http://designreviver.com/tutorials/jquery-css-example-dropdown-menu/ as a tutorial -->
+    <!-- we originally had "Sponsors" as its own category, but since the previous nerdherd site had sponsors listed under
+         "The Nerds" we decided to go with that...-->
+    <div id="sidebar">
+        <ul>
+            <li> <a href="index.html" class="home">Home</a></li>
+            <li>Team Log</li>
+            <li>Events
+                <ul class="sub">
+                    <li>VEX Summer Camps</li>
+                    <li>CAMS/SMI VEX Invitational Competition</li>
+                    <li>CAMS Middle School VEX Competition</li>
+                    <li>Halloween Night</li>
+                </ul>
+            </li>
+            <li><a href="vex.html" class="programs">Programs</a>
+                <ul class="sub">
+                    <li>FIRST Robotics Competition (FRC)</li>
+                    <li>VEX Robotics</li>
+                    <li>Remotely Operated Vehicles (ROV)</li>
+                    <li>Outreach</li>
+                </ul>
+            </li>
+            <li>Resources
+                <ul class="sub">
+                    <li>Team Documents</li>
+                    <li>VEX Resources</li>
+                </ul>
+            </li>
+            <li>The Nerds
+                <ul class="sub">
+                    <li>The Chairmen</li>
+                    <li>The Leaders</li>
+                    <li>FRC</li>
+                    <li>VEX</li>
+                    <li>The Mentors</li>
+                    <li>Sponsors</li>
+                </ul> 
+            </li>
+            <li>Media
+           		<ul class="sub">
+                    <li>Image Gallery</li>
+                </ul> 
+            </li>
+            <li>Contact Us</li>
+            <li>About</li>
+        </ul>
+    </div>
+    
+<div id="home">
+<div class="content">
+<div id="programs"><div class="s_tile"><a href="programs.html"><span class="text">Programs</span></a></div></div>
+<div id="thenerds"><div class="s_tile"><a href="programs.html"><span class="text">The Nerds</span></a></div></div>
+<div id="outreach"><div class="s_tile"><a href="programs.html"><span class="text">Outreach</span></a></div></div>
+<div id="theherd"><div class="l_tile"><a href="programs.html"><span class="text">The Herd</span></a></div></div>
+<div id="sponsors"><div class="s_tile"><a href="programs.html"><span class="text">Sponsors</span></a></div></div>
+</div>
+</div>
+
+<div id="footer"><a href="http://www.californiaacademy.org">California Academy of Mathematics and Science</a></div>
+</div>
+<div class="p_footer">
+<div id="legal">
+© Copyright 1998-2011 CAMSRobotics. All Rights Reserved.<br/>
+FIRST, FRC,GRACIOUS PROFESSIONALISM, LOGOMOTION, BREAKAWAY, and LUNACY are registered trademarks of United States Foundation for Inspiration and Recognition of Science and Technology or USFIRST, a 501 (c) (3) not-for-profit public charity. VEX, VEX GATEWAY, VEX ROUND UP, and VEX ROBOTICS are trademarks or registered trademarks of Innovation First International, Inc. VEX Robotics is a subsiadary of Innovation First International Inc. All other copyrights and trademarks are property of their respective owners. © Copyright 1998-2011 CAMSRobotics. All Rights Reserved. FIRST, FRC,GRACIOUS PROFESSIONALISM, LOGOMOTION, BREAKAWAY, and LUNACY are registered trademarks of United States Foundation for Inspiration and Recognition of Science and Technology or USFIRST, a 501 (c) (3) not-for-profit public charity. VEX, VEX GATEWAY, VEX ROUND UP, and VEX ROBOTICS are trademarks or registered trademarks of Innovation First International, Inc. VEX Robotics is a subsiadary of Innovation First International Inc. All other copyrights and trademarks are property of their respective owners. <br/>
+</div>
+</div>
+</body>
+</html>
